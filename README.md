@@ -1,16 +1,117 @@
-# React + Vite
+# 🔐 Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple and customizable Password Generator built with **React.js** and **Vite**. This application allows users to generate secure random passwords by selecting different character types and customizing password length.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Generate random passwords.
+- Customize password length.
+- Include uppercase letters (A-Z).
+- Include lowercase letters (a-z).
+- Include numbers (0-9).
+- Include special characters (!@#$%).
+- Copy generated passwords to clipboard.
+- Display password strength.
+- Regenerate passwords instantly.
 
-## React Compiler
+## 🛠️ Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- JavaScript (ES6+)
+- CSS3
+- Vite
+- React Hooks (`useState`, `useCallback`)
+- Web Crypto API
 
-## Expanding the Oxlint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```text
+password-generator/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── PasswordDisplay.jsx
+│   │   ├── PasswordOptions.jsx
+│   │   ├── PasswordLength.jsx
+│   │   └── GenerateButton.jsx
+│   ├── hooks/
+│   │   └── usePasswordGenerator.js
+│   ├── utils/
+│   │   └── generatePassword.js
+│   ├── styles/
+│   │   └── App.css
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+└── README.md
+```
+
+## ⚙️ Installation
+
+**1. Clone the repository**
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd password-generator
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Start the development server**
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+## 🌿 Git Branches
+
+The project follows a simple Git workflow:
+
+- `main` — Stable production version.
+- `develop` — Development and integration branch.
+- `feature/password-generator` — Password generation functionality.
+- `feature/password-ui` — User interface and styling.
+
+## 📌 Learning Objectives
+
+This project is designed to practice:
+
+- Building reusable React components.
+- Managing state with React Hooks.
+- Passing data through props.
+- Handling user events.
+- Writing reusable JavaScript functions.
+- Working with the Clipboard API.
+- Generating secure random values using the Web Crypto API.
+- Managing projects with Git and GitHub.
+
+## 🔮 Future Improvements
+
+- Add a password strength indicator.
+- Add dark and light themes.
+- Improve responsive design.
+- Add password history.
+- Add more customization options.
+
+## 👨‍💻 Author
+
+Zaami Anas
+
+Full Stack Web Development Student
+
+---
+
+⭐ If you find this project useful, feel free to star the repository!
